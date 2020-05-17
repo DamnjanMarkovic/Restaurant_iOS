@@ -1,0 +1,20 @@
+PODS:
+  - SSZipArchive (2.2.2)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - SSZipArchive
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - SSZipArchive
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: f1194f6f7579c34cef14127389c7d47a07e24ef5
+
+COCOAPODS: 1.9.1

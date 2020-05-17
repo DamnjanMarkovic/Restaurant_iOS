@@ -1,0 +1,6 @@
+framework module Pods_RestoranIOs_2_001 {
+  umbrella header "Pods-RestoranIOs_2_001-umbrella.h"
+
+  export *
+  module * { export * }
+}
