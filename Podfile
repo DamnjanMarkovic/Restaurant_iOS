@@ -1,11 +1,12 @@
 
 platform :ios, '10.0'
 
-target 'RestoranIOs_2_001' do
+target 'RestoranIOs' do
 
 use_frameworks!
 
 pod 'SVProgressHUD'
 pod 'SSZipArchive'
+pod 'DatePickerDialog'
 
 end

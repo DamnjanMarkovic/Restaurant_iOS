@@ -29,3 +29,50 @@ struct Bill: Codable {
 
 }
   
+class Bills: Decodable {
+
+    let id_bill: Int
+    let bill_time: String
+    let id_user: Int
+    let payment_type: String
+    let reduction: Double
+    let total_amount: Double
+    let id_restaurant: Int
+    let orders: [Orders]
+   
+    static func downloadBills(_ login: Login, _ apiLink: String, completed: @escaping (Result<[Bills], Error>) -> ()) -> [Bills] {
+        var bills = [Bills]()
+        let jwt = login.jwt
+        
+        let urlString = apiLink + "/rest/bills/all"
+        let url = URL (string: urlString)
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
+        request.addValue("Bearer " + jwt, forHTTPHeaderField: "Authorization")
+        let session = URLSession.shared
+        let _: Void = session.dataTask(with: request) { (data, response, error) in
+            if error == nil {
+            do {
+                bills = try JSONDecoder().decode([Bills].self, from: data!)
+                DispatchQueue.main.async {
+                    completed(.success(bills))
+                }
+                }catch{
+                    print("Bills Json error")
+                }
+            }
+        }.resume()
+        return bills
+    }
+    
+    
+}
+
+class Orders: Decodable, Encodable {
+    
+    let id_order: Int
+    let id_offer: Int
+    let quantity: Double
+
+    
+}

@@ -1,20 +1,24 @@
 PODS:
+  - DatePickerDialog (3.0)
   - SSZipArchive (2.2.2)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - DatePickerDialog
   - SSZipArchive
   - SVProgressHUD
 
 SPEC REPOS:
   trunk:
+    - DatePickerDialog
     - SSZipArchive
     - SVProgressHUD
 
 SPEC CHECKSUMS:
+  DatePickerDialog: 03dbb8350bfa80302ab2a8c83cee1fec70184444
   SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: f1194f6f7579c34cef14127389c7d47a07e24ef5
+PODFILE CHECKSUM: e4627833b953d186675d09e7be26f38208ae88ce
 
 COCOAPODS: 1.9.1

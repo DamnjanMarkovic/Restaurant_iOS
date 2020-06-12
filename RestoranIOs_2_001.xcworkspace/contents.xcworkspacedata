@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:RestoranIOs_2_001.xcodeproj">
+      location = "group:/Users/damnjan/Documents/Damnjan/Programiranje/Java/CodeComtradeFinal/RestoranIOs_2_001/RestoranIOs.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
